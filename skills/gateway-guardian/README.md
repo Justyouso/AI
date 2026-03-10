@@ -18,15 +18,17 @@ Gateway Guardian ensures your OpenClaw gateway never gets killed by configuratio
 ### 1. Install the Skill
 
 ```bash
-# Clone from GitHub
-cd ~/.openclaw/skills/
-git clone https://github.com/YOUR_USERNAME/gateway-guardian.git
+# Clone the entire repo and copy the skill
+cd /tmp
+git clone https://github.com/Justyouso/AI.git
+cp -r AI/skills/gateway-guardian ~/.openclaw/skills/
 
-# Or download and extract
+# Or download specific skill folder
 cd ~/.openclaw/skills/
-wget https://github.com/YOUR_USERNAME/gateway-guardian/archive/refs/heads/main.zip
+wget https://github.com/Justyouso/AI/archive/refs/heads/main.zip
 unzip main.zip
-mv gateway-guardian-main gateway-guardian
+mv AI-main/skills/gateway-guardian ./
+rm -rf AI-main main.zip
 ```
 
 ### 2. Auto-Configure (Recommended)
